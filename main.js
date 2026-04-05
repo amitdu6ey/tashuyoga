@@ -1,6 +1,6 @@
 // Tashu Yoga — main.js
 
-// Navbar: add .scrolled class on scroll
+// Navbar: scrolled state
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 60);
@@ -21,7 +21,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Contact form — simple success message (no backend)
+// Contact form — success message (no backend)
 function handleSubmit(e) {
   e.preventDefault();
   const success = document.getElementById('formSuccess');
@@ -30,24 +30,14 @@ function handleSubmit(e) {
   setTimeout(() => { success.style.display = 'none'; }, 5000);
 }
 
-// Scroll reveal — fade in sections
-const revealEls = document.querySelectorAll('.card, .testimonial-card, .stat, .quality');
+// Scroll reveal
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = entry.target.classList.contains('testimonial-card')
-        && entry.target.classList.contains('featured')
-        ? 'translateY(-8px)'
-        : 'translateY(0)';
+      entry.target.classList.add('visible');
       observer.unobserve(entry.target);
     }
   });
 }, { threshold: 0.1 });
 
-revealEls.forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-  observer.observe(el);
-});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
