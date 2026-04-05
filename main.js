@@ -1,27 +1,22 @@
 // Tashu Yoga — main.js
 
-// Navbar: scrolled state
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 60);
 }, { passive: true });
 
-// Mobile nav toggle
 function toggleMenu() {
   document.getElementById('navLinks').classList.toggle('open');
 }
 
-// Close mobile nav on link click
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     document.getElementById('navLinks').classList.remove('open');
   });
 });
 
-// Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Contact form — success message (no backend)
 function handleSubmit(e) {
   e.preventDefault();
   const success = document.getElementById('formSuccess');
@@ -30,7 +25,6 @@ function handleSubmit(e) {
   setTimeout(() => { success.style.display = 'none'; }, 5000);
 }
 
-// Scroll reveal
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
