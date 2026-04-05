@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tashu Yoga | Find Your Balance</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">Tashu Yoga</a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="btn-outline">Book a Class</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Welcome to Tashu Yoga</p>
+      <h1>Find Your <em>Balance</em>,<br />Awaken Your <em>Strength</em></h1>
+      <p class="hero-sub">A sanctuary for every body — from first breath to seasoned practitioner.</p>
+      <div class="hero-actions">
+        <a href="#classes" class="btn-primary">Explore Classes</a>
+        <a href="#about" class="btn-ghost">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">&#8595; Scroll to explore</div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip">
+    <div class="stat">
+      <span class="stat-number">12+</span>
+      <span class="stat-label">Years of Practice</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">500+</span>
+      <span class="stat-label">Students Taught</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">8</span>
+      <span class="stat-label">Class Styles</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">100%</span>
+      <span class="stat-label">Heart &amp; Soul</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container two-col">
+      <div class="about-image">
+        <div class="image-frame">
+          <div class="image-placeholder">
+            <span class="lotus">&#9880;</span>
+          </div>
+          <div class="image-badge">RYT-500 Certified</div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-tag">About Tashu</p>
+        <h2>A Journey Rooted in Tradition, Open to All</h2>
+        <p>My name is Tashu, and yoga found me during a season of transformation. What started as a search for stillness became a lifelong dedication to the ancient science of breath, movement, and awareness.</p>
+        <p>I trained in Rishikesh, India — the yoga capital of the world — completing 500 hours of study under traditional Hatha and Vinyasa teachers. My classes blend anatomical precision with soulful guidance, making the practice accessible and deeply personal.</p>
+        <div class="about-qualities">
+          <div class="quality">
+            <span class="quality-icon">&#129717;</span>
+            <div>
+              <strong>Trauma-Informed</strong>
+              <p>A safe, inclusive space for every story.</p>
+            </div>
+          </div>
+          <div class="quality">
+            <span class="quality-icon">&#127774;</span>
+            <div>
+              <strong>Holistic Approach</strong>
+              <p>Mind, body, and breath in harmony.</p>
+            </div>
+          </div>
+          <div class="quality">
+            <span class="quality-icon">&#127807;</span>
+            <div>
+              <strong>Rooted in Tradition</strong>
+              <p>Classical teachings, modern relevance.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary">Start Your Journey</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASSES -->
+  <section id="classes" class="classes section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What We Offer</p>
+        <h2>Classes for Every Level</h2>
+        <p class="section-desc">Whether you're stepping on the mat for the first time or deepening an existing practice, there is a class for you.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">&#127774;</div>
+          <h3>Hatha Yoga</h3>
+          <p class="card-level">All Levels</p>
+          <p>The foundation of all yoga. Slow, deliberate postures paired with conscious breathing to build strength and flexibility.</p>
+          <span class="card-duration">60 min</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128165;</div>
+          <h3>Vinyasa Flow</h3>
+          <p class="card-level">Beginner – Intermediate</p>
+          <p>Dynamic sequences that link movement with breath. Build heat, improve endurance, and cultivate a moving meditation.</p>
+          <span class="card-duration">75 min</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#127775;</div>
+          <h3>Yin Yoga</h3>
+          <p class="card-level">All Levels</p>
+          <p>Long-held passive poses targeting the deeper connective tissues. A profound practice for release and restoration.</p>
+          <span class="card-duration">75 min</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#129756;</div>
+          <h3>Pranayama &amp; Meditation</h3>
+          <p class="card-level">All Levels</p>
+          <p>Breath mastery and seated meditation techniques to calm the nervous system and cultivate inner clarity.</p>
+          <span class="card-duration">45 min</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#9728;</div>
+          <h3>Morning Rise Flow</h3>
+          <p class="card-level">All Levels</p>
+          <p>An energizing morning practice to awaken the body and set a grounded, intentional tone for your day.</p>
+          <span class="card-duration">45 min</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#127773;</div>
+          <h3>Private Sessions</h3>
+          <p class="card-level">Personalised</p>
+          <p>One-on-one sessions tailored entirely to your goals, injuries, or curiosity. The fastest path to transformation.</p>
+          <span class="card-duration">60–90 min</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule" class="schedule section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Weekly Schedule</p>
+        <h2>Join Us on the Mat</h2>
+        <p class="section-desc">All classes held at our studio and available online. Times shown in IST.</p>
+      </div>
+      <div class="schedule-table-wrap">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Class</th>
+              <th>Level</th>
+              <th>Format</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>6:30 AM</td>
+              <td>Morning Rise Flow</td>
+              <td>All Levels</td>
+              <td><span class="tag studio">Studio</span></td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>7:00 AM</td>
+              <td>Hatha Yoga</td>
+              <td>All Levels</td>
+              <td><span class="tag online">Online</span></td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>6:30 AM</td>
+              <td>Vinyasa Flow</td>
+              <td>Intermediate</td>
+              <td><span class="tag studio">Studio</span></td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>7:00 PM</td>
+              <td>Yin Yoga</td>
+              <td>All Levels</td>
+              <td><span class="tag hybrid">Hybrid</span></td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>6:30 AM</td>
+              <td>Pranayama &amp; Meditation</td>
+              <td>All Levels</td>
+              <td><span class="tag online">Online</span></td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>7:00 AM</td>
+              <td>Hatha Yoga</td>
+              <td>Beginner</td>
+              <td><span class="tag studio">Studio</span></td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>8:00 AM</td>
+              <td>Vinyasa Flow</td>
+              <td>All Levels</td>
+              <td><span class="tag hybrid">Hybrid</span></td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>9:00 AM</td>
+              <td>Yin &amp; Meditation</td>
+              <td>All Levels</td>
+              <td><span class="tag studio">Studio</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="schedule-note">&#9432; Private sessions available by appointment Monday–Saturday.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Student Stories</p>
+        <h2>Words from the Community</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Tashu's classes changed my relationship with my body. Her gentle guidance and deep knowledge make even beginners feel capable and seen."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">P</div>
+            <div>
+              <strong>Priya S.</strong>
+              <span>Student since 2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"I came for stress relief and found a whole community. The Yin sessions on Wednesday evenings are the highlight of my week. I feel genuinely transformed."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <strong>Arjun M.</strong>
+              <span>Student since 2021</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"The private sessions were a game-changer for my lower back pain. Tashu's anatomical knowledge and patience are extraordinary."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div>
+              <strong>Riya K.</strong>
+              <span>Student since 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / BOOKING -->
+  <section id="contact" class="contact section">
+    <div class="container two-col contact-col">
+      <div class="contact-info">
+        <p class="section-tag">Get in Touch</p>
+        <h2>Ready to Begin?</h2>
+        <p>Book a class, ask a question, or simply say hello. Every journey starts with a single step — or a single breath.</p>
+        <ul class="contact-details">
+          <li>
+            <span class="contact-icon">&#128205;</span>
+            <span>Studio location shared upon booking</span>
+          </li>
+          <li>
+            <span class="contact-icon">&#128248;</span>
+            <span>Online classes via Zoom</span>
+          </li>
+          <li>
+            <span class="contact-icon">&#128338;</span>
+            <span>Classes 6 days a week</span>
+          </li>
+        </ul>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+          <a href="#" aria-label="YouTube" class="social-link">YouTube</a>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="class">Interested In</label>
+            <select id="class" name="class">
+              <option value="">Select a class…</option>
+              <option>Hatha Yoga</option>
+              <option>Vinyasa Flow</option>
+              <option>Yin Yoga</option>
+              <option>Pranayama &amp; Meditation</option>
+              <option>Morning Rise Flow</option>
+              <option>Private Session</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any questions, injuries, or intentions to share…"></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">Send Message</button>
+          <p class="form-note" id="formSuccess" style="display:none;">&#10003; Thank you! I'll be in touch soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">Tashu Yoga</span>
+        <p>Breathe. Move. Transform.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#classes">Classes</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; <span id="year"></span> Tashu Yoga. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
