@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="1400" height="800">
+  <defs>
+    <linearGradient id="lawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8dfc0"/>
+      <stop offset="100%" stop-color="#8ab878"/>
+    </linearGradient>
+    <linearGradient id="skyPurple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4c8f0"/>
+      <stop offset="60%" stop-color="#e8dff8"/>
+      <stop offset="100%" stop-color="#c8dfc0"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#b89ae0" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#b89ae0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="personShadow">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#2a1a4a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background gradient -->
+  <rect width="1400" height="800" fill="url(#skyPurple)"/>
+  <!-- Lawn -->
+  <rect x="0" y="300" width="1400" height="500" fill="url(#lawn)"/>
+
+  <!-- Center energy glow (aerial view) -->
+  <circle cx="700" cy="500" r="380" fill="url(#centerGlow)"/>
+  <circle cx="700" cy="500" r="320" fill="none" stroke="#9070c8" stroke-width="1.5" stroke-dasharray="8 12" opacity="0.25"/>
+  <circle cx="700" cy="500" r="250" fill="none" stroke="#9070c8" stroke-width="1" stroke-dasharray="5 10" opacity="0.2"/>
+  <circle cx="700" cy="500" r="180" fill="none" stroke="#9070c8" stroke-width="1" stroke-dasharray="3 8" opacity="0.18"/>
+
+  <!-- Grid of yoga mats (top-down view) -->
+  <!-- Row 1 (far back) -->
+  <g fill="#c8b8a0" opacity="0.55">
+    <ellipse cx="220" cy="340" rx="38" ry="12"/><ellipse cx="320" cy="330" rx="38" ry="12"/>
+    <ellipse cx="420" cy="325" rx="38" ry="12"/><ellipse cx="520" cy="322" rx="38" ry="12"/>
+    <ellipse cx="620" cy="320" rx="38" ry="12"/><ellipse cx="720" cy="320" rx="38" ry="12"/>
+    <ellipse cx="820" cy="322" rx="38" ry="12"/><ellipse cx="920" cy="325" rx="38" ry="12"/>
+    <ellipse cx="1020" cy="330" rx="38" ry="12"/><ellipse cx="1120" cy="340" rx="38" ry="12"/>
+    <ellipse cx="1220" cy="355" rx="38" ry="12"/>
+  </g>
+  <!-- Row 2 -->
+  <g fill="#d8c8b0" opacity="0.6">
+    <ellipse cx="160" cy="420" rx="42" ry="14"/><ellipse cx="280" cy="408" rx="42" ry="14"/>
+    <ellipse cx="400" cy="400" rx="42" ry="14"/><ellipse cx="520" cy="396" rx="42" ry="14"/>
+    <ellipse cx="640" cy="394" rx="42" ry="14"/><ellipse cx="760" cy="393" rx="42" ry="14"/>
+    <ellipse cx="880" cy="394" rx="42" ry="14"/><ellipse cx="1000" cy="396" rx="42" ry="14"/>
+    <ellipse cx="1120" cy="402" rx="42" ry="14"/><ellipse cx="1240" cy="412" rx="42" ry="14"/>
+  </g>
+  <!-- Row 3 (middle) -->
+  <g fill="#e0d0b8" opacity="0.65">
+    <ellipse cx="120" cy="500" rx="46" ry="15"/><ellipse cx="260" cy="488" rx="46" ry="15"/>
+    <ellipse cx="400" cy="480" rx="46" ry="15"/><ellipse cx="540" cy="476" rx="46" ry="15"/>
+    <ellipse cx="680" cy="474" rx="46" ry="15"/><ellipse cx="820" cy="474" rx="46" ry="15"/>
+    <ellipse cx="960" cy="476" rx="46" ry="15"/><ellipse cx="1100" cy="480" rx="46" ry="15"/>
+    <ellipse cx="1240" cy="490" rx="46" ry="15"/><ellipse cx="1360" cy="502" rx="46" ry="15"/>
+  </g>
+  <!-- Row 4 -->
+  <g fill="#d8c8b0" opacity="0.6">
+    <ellipse cx="100" cy="580" rx="44" ry="15"/><ellipse cx="240" cy="570" rx="44" ry="15"/>
+    <ellipse cx="380" cy="562" rx="44" ry="15"/><ellipse cx="520" cy="558" rx="44" ry="15"/>
+    <ellipse cx="660" cy="556" rx="44" ry="15"/><ellipse cx="800" cy="555" rx="44" ry="15"/>
+    <ellipse cx="940" cy="556" rx="44" ry="15"/><ellipse cx="1080" cy="560" rx="44" ry="15"/>
+    <ellipse cx="1220" cy="568" rx="44" ry="15"/><ellipse cx="1350" cy="580" rx="44" ry="15"/>
+  </g>
+  <!-- Row 5 (front) -->
+  <g fill="#c8b8a0" opacity="0.55">
+    <ellipse cx="140" cy="660" rx="42" ry="14"/><ellipse cx="280" cy="652" rx="42" ry="14"/>
+    <ellipse cx="420" cy="646" rx="42" ry="14"/><ellipse cx="560" cy="642" rx="42" ry="14"/>
+    <ellipse cx="700" cy="640" rx="42" ry="14"/><ellipse cx="840" cy="641" rx="42" ry="14"/>
+    <ellipse cx="980" cy="644" rx="42" ry="14"/><ellipse cx="1120" cy="650" rx="42" ry="14"/>
+    <ellipse cx="1260" cy="658" rx="42" ry="14"/>
+  </g>
+
+  <!-- Meditating figures (top-down silhouettes) – lotus position viewed from above -->
+  <!-- Row 1 figures -->
+  <g fill="#3a2a5a" opacity="0.65" filter="url(#personShadow)">
+    <g transform="translate(220,340)"><circle r="10"/><ellipse cy="6" rx="18" ry="7" opacity="0.7"/></g>
+    <g transform="translate(320,330)"><circle r="10"/><ellipse cy="6" rx="18" ry="7" opacity="0.7"/></g>
+    <g transform="translate(420,325)"><circle r="10"/><ellipse cy="6" rx="18" ry="7" opacity="0.7"/></g>
+    <g transform="translate(520,322)"><circle r="10"/><ellipse cy="6" rx="18" ry="7" opacity="0.7"/></g>
+    <g transform="translate(620,320)"><circle r="10"/><ellipse cy="6" rx="18" ry="7" opacity="0.7"/></g>
+    <g transform="translate(720,320)"><circle r="10"/><ellipse cy="6" rx="18" ry="7" opacity="0.7"/></g>
+    <g transform="translate(820,322)"><circle r="10"/><ellipse cy="6" rx="18" ry="7" opacity="0.7"/></g>
+    <g transform="translate(920,325)"><circle r="10"/><ellipse cy="6" rx="18" ry="7" opacity="0.7"/></g>
+    <g transform="translate(1020,330)"><circle r="10"/><ellipse cy="6" rx="18" ry="7" opacity="0.7"/></g>
+    <g transform="translate(1120,340)"><circle r="10"/><ellipse cy="6" rx="18" ry="7" opacity="0.7"/></g>
+  </g>
+  <!-- Row 3 figures (middle, larger) -->
+  <g fill="#2a1a4a" opacity="0.72" filter="url(#personShadow)">
+    <g transform="translate(120,500)"><circle r="12"/><ellipse cy="7" rx="21" ry="8"/></g>
+    <g transform="translate(260,488)"><circle r="12"/><ellipse cy="7" rx="21" ry="8"/></g>
+    <g transform="translate(400,480)"><circle r="12"/><ellipse cy="7" rx="21" ry="8"/></g>
+    <g transform="translate(540,476)"><circle r="12"/><ellipse cy="7" rx="21" ry="8"/></g>
+    <g transform="translate(680,474)"><circle r="12"/><ellipse cy="7" rx="21" ry="8"/></g>
+    <g transform="translate(820,474)"><circle r="12"/><ellipse cy="7" rx="21" ry="8"/></g>
+    <g transform="translate(960,476)"><circle r="12"/><ellipse cy="7" rx="21" ry="8"/></g>
+    <g transform="translate(1100,480)"><circle r="12"/><ellipse cy="7" rx="21" ry="8"/></g>
+    <g transform="translate(1240,490)"><circle r="12"/><ellipse cy="7" rx="21" ry="8"/></g>
+  </g>
+
+  <!-- Special central instructor figure - slightly highlighted -->
+  <g transform="translate(700,500)" filter="url(#personShadow)">
+    <circle r="14" fill="#6a4a9a"/>
+    <ellipse cy="8" rx="24" ry="9" fill="#6a4a9a"/>
+    <circle r="14" fill="none" stroke="#d4b8f0" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <!-- Row 5 figures -->
+  <g fill="#3a2a5a" opacity="0.65" filter="url(#personShadow)">
+    <g transform="translate(140,660)"><circle r="11"/><ellipse cy="6" rx="20" ry="7.5"/></g>
+    <g transform="translate(280,652)"><circle r="11"/><ellipse cy="6" rx="20" ry="7.5"/></g>
+    <g transform="translate(420,646)"><circle r="11"/><ellipse cy="6" rx="20" ry="7.5"/></g>
+    <g transform="translate(560,642)"><circle r="11"/><ellipse cy="6" rx="20" ry="7.5"/></g>
+    <g transform="translate(700,640)"><circle r="11"/><ellipse cy="6" rx="20" ry="7.5"/></g>
+    <g transform="translate(840,641)"><circle r="11"/><ellipse cy="6" rx="20" ry="7.5"/></g>
+    <g transform="translate(980,644)"><circle r="11"/><ellipse cy="6" rx="20" ry="7.5"/></g>
+    <g transform="translate(1120,650)"><circle r="11"/><ellipse cy="6" rx="20" ry="7.5"/></g>
+    <g transform="translate(1260,658)"><circle r="11"/><ellipse cy="6" rx="20" ry="7.5"/></g>
+  </g>
+
+  <!-- Overhead banner suggestion -->
+  <rect x="540" y="30" width="320" height="60" rx="6" fill="#4a2a7a" opacity="0.15"/>
+  <text x="700" y="55" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#4a2a7a" opacity="0.5" letter-spacing="3">MASS MEDITATION</text>
+  <text x="700" y="76" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#4a2a7a" opacity="0.4" letter-spacing="4">TASHU YOGA · 200+ STUDENTS</text>
+
+  <!-- Subtle title reflection on lawn -->
+  <text x="700" y="770" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#3a2a5a" opacity="0.2" letter-spacing="5">ONE BREATH · ONE COMMUNITY</text>
+</svg>

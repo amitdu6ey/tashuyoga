@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d0921"/>
+      <stop offset="25%" stop-color="#2a1042"/>
+      <stop offset="55%" stop-color="#7c2d6e"/>
+      <stop offset="78%" stop-color="#c45530"/>
+      <stop offset="100%" stop-color="#f0952e"/>
+    </linearGradient>
+    <radialGradient id="sun-glow" cx="50%" cy="62%" r="35%">
+      <stop offset="0%" stop-color="#ffd580" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#f07030" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#f07030" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="52%" r="28%">
+      <stop offset="0%" stop-color="#ffd580" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffd580" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bokeh" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <!-- Sun glow on horizon -->
+  <ellipse cx="600" cy="500" rx="500" ry="280" fill="url(#sun-glow)"/>
+  <!-- Halo behind figure -->
+  <ellipse cx="600" cy="420" rx="340" ry="320" fill="url(#halo)"/>
+
+  <!-- Stars -->
+  <g fill="#fff" opacity="0.7">
+    <circle cx="80" cy="60" r="1.2"/><circle cx="180" cy="40" r="0.9"/><circle cx="310" cy="80" r="1.5"/>
+    <circle cx="450" cy="30" r="1"/><circle cx="520" cy="75" r="0.8"/><circle cx="680" cy="45" r="1.3"/>
+    <circle cx="780" cy="20" r="1.1"/><circle cx="870" cy="65" r="0.9"/><circle cx="950" cy="35" r="1.4"/>
+    <circle cx="1050" cy="55" r="1"/><circle cx="1130" cy="90" r="0.8"/><circle cx="140" cy="120" r="0.7"/>
+    <circle cx="260" cy="140" r="1"/><circle cx="390" cy="100" r="0.8"/><circle cx="730" cy="110" r="1.2"/>
+    <circle cx="1000" cy="100" r="0.9"/><circle cx="1100" cy="130" r="1.1"/><circle cx="60" cy="200" r="0.7"/>
+    <circle cx="340" cy="180" r="0.8"/><circle cx="560" cy="150" r="1"/><circle cx="820" cy="160" r="0.8"/>
+    <circle cx="1020" cy="175" r="0.7"/><circle cx="1150" cy="200" r="0.9"/>
+  </g>
+
+  <!-- Bokeh light orbs -->
+  <circle cx="150" cy="250" r="45" fill="#f07030" opacity="0.06" filter="url(#bokeh)"/>
+  <circle cx="980" cy="180" r="60" fill="#ffd580" opacity="0.05" filter="url(#bokeh)"/>
+  <circle cx="350" cy="350" r="35" fill="#c45530" opacity="0.07" filter="url(#bokeh)"/>
+  <circle cx="900" cy="320" r="50" fill="#f0952e" opacity="0.06" filter="url(#bokeh)"/>
+  <circle cx="200" cy="500" r="40" fill="#ffd580" opacity="0.04" filter="url(#bokeh)"/>
+  <circle cx="1050" cy="430" r="55" fill="#f07030" opacity="0.05" filter="url(#bokeh)"/>
+
+  <!-- Moon / sun disc -->
+  <circle cx="600" cy="330" r="100" fill="#ffeab0" opacity="0.12"/>
+  <circle cx="600" cy="330" r="76" fill="#ffd580" opacity="0.18"/>
+  <circle cx="600" cy="330" r="52" fill="#f0b030" opacity="0.22"/>
+
+  <!-- Mandala rings around figure -->
+  <g fill="none" stroke="#f0952e" opacity="0.22">
+    <circle cx="600" cy="490" r="280" stroke-width="0.8" stroke-dasharray="6 10"/>
+    <circle cx="600" cy="490" r="230" stroke-width="0.8" stroke-dasharray="4 8"/>
+    <circle cx="600" cy="490" r="185" stroke-width="1" stroke-dasharray="2 6"/>
+  </g>
+  <!-- Mandala spokes -->
+  <g stroke="#f0952e" stroke-width="0.6" opacity="0.15">
+    <line x1="600" y1="210" x2="600" y2="770"/>
+    <line x1="320" y1="490" x2="880" y2="490"/>
+    <line x1="402" y1="292" x2="798" y2="688"/>
+    <line x1="798" y1="292" x2="402" y2="688"/>
+    <line x1="360" y1="370" x2="840" y2="610"/>
+    <line x1="840" y1="370" x2="360" y2="610"/>
+  </g>
+
+  <!-- Reflection / water at bottom -->
+  <rect x="0" y="650" width="1200" height="150" fill="#0d0921" opacity="0.6"/>
+  <g opacity="0.18" stroke="#f0952e" stroke-width="1" fill="none">
+    <line x1="0" y1="660" x2="1200" y2="660"/>
+    <line x1="0" y1="680" x2="1200" y2="680"/>
+    <line x1="0" y1="700" x2="1200" y2="700"/>
+  </g>
+
+  <!-- Lotus pose silhouette (centered, 590–640 y base) -->
+  <g filter="url(#soft-glow)">
+    <!-- Crossed legs -->
+    <path d="M600,640 C560,625 500,610 460,600 C480,580 540,575 580,580 L600,580 L620,580 C660,575 720,580 740,600 C700,610 640,625 600,640Z" fill="#0d0921"/>
+    <!-- Left leg bent over -->
+    <path d="M580,580 C550,575 510,560 490,540 C510,530 545,540 565,558Z" fill="#0d0921"/>
+    <!-- Right leg bent over -->
+    <path d="M620,580 C650,575 690,560 710,540 C690,530 655,540 635,558Z" fill="#0d0921"/>
+    <!-- Torso -->
+    <path d="M575,580 C565,540 563,500 568,470 C572,450 580,440 600,436 C620,440 628,450 632,470 C637,500 635,540 625,580Z" fill="#0d0921"/>
+    <!-- Head -->
+    <circle cx="600" cy="416" r="30" fill="#0d0921"/>
+    <!-- Hair bun -->
+    <circle cx="600" cy="390" r="14" fill="#0d0921"/>
+    <!-- Left arm resting -->
+    <path d="M575,520 C555,520 530,525 510,530" stroke="#0d0921" stroke-width="13" stroke-linecap="round" fill="none"/>
+    <circle cx="503" cy="532" r="7" fill="#0d0921"/>
+    <!-- Right arm resting -->
+    <path d="M625,520 C645,520 670,525 690,530" stroke="#0d0921" stroke-width="13" stroke-linecap="round" fill="none"/>
+    <circle cx="697" cy="532" r="7" fill="#0d0921"/>
+  </g>
+
+  <!-- Floating lotus petals -->
+  <g fill="#c45530" opacity="0.25">
+    <ellipse cx="320" cy="620" rx="18" ry="9" transform="rotate(-20 320 620)"/>
+    <ellipse cx="860" cy="600" rx="16" ry="8" transform="rotate(15 860 600)"/>
+    <ellipse cx="400" cy="680" rx="14" ry="7" transform="rotate(-10 400 680)"/>
+    <ellipse cx="820" cy="670" rx="15" ry="7" transform="rotate(25 820 670)"/>
+    <ellipse cx="200" cy="640" rx="12" ry="6" transform="rotate(-35 200 640)"/>
+    <ellipse cx="970" cy="650" rx="13" ry="6" transform="rotate(30 970 650)"/>
+  </g>
+
+  <!-- Subtle text overlay hint at bottom -->
+  <text x="600" y="760" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#f0952e" opacity="0.4" letter-spacing="4">TASHU YOGA</text>
+</svg>

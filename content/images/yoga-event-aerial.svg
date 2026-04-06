@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="1400" height="800">
+  <defs>
+    <linearGradient id="fieldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b8d4a0"/>
+      <stop offset="100%" stop-color="#7aac60"/>
+    </linearGradient>
+    <linearGradient id="skyBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a90d8"/>
+      <stop offset="100%" stop-color="#a8d4f4"/>
+    </linearGradient>
+    <radialGradient id="eventGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="matPattern" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <rect width="80" height="80" fill="none"/>
+      <ellipse cx="40" cy="40" rx="28" ry="10" fill="#c8b890" opacity="0.5"/>
+      <circle cx="40" cy="34" r="8" fill="#2a2a3a" opacity="0.55"/>
+      <ellipse cx="40" cy="38" rx="13" ry="5" fill="#2a2a3a" opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky (upper portion - aerial perspective) -->
+  <rect width="1400" height="220" fill="url(#skyBlue)"/>
+  <!-- Field (main area) -->
+  <rect x="0" y="220" width="1400" height="580" fill="url(#fieldGrad)"/>
+  <!-- Event glow -->
+  <rect width="1400" height="800" fill="url(#eventGlow)"/>
+
+  <!-- Horizon line / edge of field -->
+  <line x1="0" y1="220" x2="1400" y2="220" stroke="#5a9a40" stroke-width="3" opacity="0.4"/>
+
+  <!-- Field markings / event layout lines -->
+  <g stroke="#a0c880" stroke-width="1.5" fill="none" opacity="0.5">
+    <rect x="200" y="260" width="1000" height="480"/>
+    <line x1="700" y1="260" x2="700" y2="740"/>
+    <line x1="200" y1="500" x2="1200" y2="500"/>
+    <circle cx="700" cy="500" r="100"/>
+    <circle cx="700" cy="500" r="200"/>
+    <circle cx="700" cy="500" r="300"/>
+  </g>
+
+  <!-- Yoga mat rows - aerial view showing hundreds of people -->
+  <!-- Zone 1 - top left quadrant -->
+  <g fill="#c8b490" opacity="0.6">
+    <ellipse cx="260" cy="300" rx="25" ry="9"/><ellipse cx="320" cy="300" rx="25" ry="9"/><ellipse cx="380" cy="300" rx="25" ry="9"/>
+    <ellipse cx="440" cy="300" rx="25" ry="9"/><ellipse cx="500" cy="300" rx="25" ry="9"/><ellipse cx="560" cy="300" rx="25" ry="9"/>
+    <ellipse cx="260" cy="340" rx="25" ry="9"/><ellipse cx="320" cy="340" rx="25" ry="9"/><ellipse cx="380" cy="340" rx="25" ry="9"/>
+    <ellipse cx="440" cy="340" rx="25" ry="9"/><ellipse cx="500" cy="340" rx="25" ry="9"/><ellipse cx="560" cy="340" rx="25" ry="9"/>
+    <ellipse cx="260" cy="380" rx="25" ry="9"/><ellipse cx="320" cy="380" rx="25" ry="9"/><ellipse cx="380" cy="380" rx="25" ry="9"/>
+    <ellipse cx="440" cy="380" rx="25" ry="9"/><ellipse cx="500" cy="380" rx="25" ry="9"/>
+    <ellipse cx="260" cy="420" rx="25" ry="9"/><ellipse cx="320" cy="420" rx="25" ry="9"/><ellipse cx="380" cy="420" rx="25" ry="9"/>
+    <ellipse cx="440" cy="420" rx="25" ry="9"/>
+  </g>
+  <!-- Zone 1 figures -->
+  <g fill="#1e1e2e" opacity="0.65">
+    <circle cx="260" cy="295" r="7"/><circle cx="320" cy="295" r="7"/><circle cx="380" cy="295" r="7"/>
+    <circle cx="440" cy="295" r="7"/><circle cx="500" cy="295" r="7"/><circle cx="560" cy="295" r="7"/>
+    <circle cx="260" cy="335" r="7"/><circle cx="320" cy="335" r="7"/><circle cx="380" cy="335" r="7"/>
+    <circle cx="440" cy="335" r="7"/><circle cx="500" cy="335" r="7"/><circle cx="560" cy="335" r="7"/>
+    <circle cx="260" cy="375" r="7"/><circle cx="320" cy="375" r="7"/><circle cx="380" cy="375" r="7"/>
+    <circle cx="440" cy="375" r="7"/><circle cx="500" cy="375" r="7"/>
+    <circle cx="260" cy="415" r="7"/><circle cx="320" cy="415" r="7"/>
+  </g>
+
+  <!-- Zone 2 - top right quadrant -->
+  <g fill="#c0c8d8" opacity="0.6">
+    <ellipse cx="840" cy="300" rx="25" ry="9"/><ellipse cx="900" cy="300" rx="25" ry="9"/><ellipse cx="960" cy="300" rx="25" ry="9"/>
+    <ellipse cx="1020" cy="300" rx="25" ry="9"/><ellipse cx="1080" cy="300" rx="25" ry="9"/><ellipse cx="1140" cy="300" rx="25" ry="9"/>
+    <ellipse cx="840" cy="340" rx="25" ry="9"/><ellipse cx="900" cy="340" rx="25" ry="9"/><ellipse cx="960" cy="340" rx="25" ry="9"/>
+    <ellipse cx="1020" cy="340" rx="25" ry="9"/><ellipse cx="1080" cy="340" rx="25" ry="9"/><ellipse cx="1140" cy="340" rx="25" ry="9"/>
+    <ellipse cx="840" cy="380" rx="25" ry="9"/><ellipse cx="900" cy="380" rx="25" ry="9"/><ellipse cx="960" cy="380" rx="25" ry="9"/>
+    <ellipse cx="1020" cy="380" rx="25" ry="9"/><ellipse cx="1080" cy="380" rx="25" ry="9"/>
+    <ellipse cx="860" cy="420" rx="25" ry="9"/><ellipse cx="920" cy="420" rx="25" ry="9"/><ellipse cx="980" cy="420" rx="25" ry="9"/>
+    <ellipse cx="1040" cy="420" rx="25" ry="9"/>
+  </g>
+  <g fill="#1e1e2e" opacity="0.65">
+    <circle cx="840" cy="295" r="7"/><circle cx="900" cy="295" r="7"/><circle cx="960" cy="295" r="7"/>
+    <circle cx="1020" cy="295" r="7"/><circle cx="1080" cy="295" r="7"/><circle cx="1140" cy="295" r="7"/>
+    <circle cx="840" cy="335" r="7"/><circle cx="900" cy="335" r="7"/><circle cx="960" cy="335" r="7"/>
+    <circle cx="1020" cy="335" r="7"/><circle cx="1080" cy="335" r="7"/>
+    <circle cx="840" cy="375" r="7"/><circle cx="900" cy="375" r="7"/><circle cx="960" cy="375" r="7"/>
+    <circle cx="860" cy="415" r="7"/><circle cx="920" cy="415" r="7"/>
+  </g>
+
+  <!-- Zone 3 - bottom left -->
+  <g fill="#d8c8a8" opacity="0.6">
+    <ellipse cx="240" cy="560" rx="25" ry="9"/><ellipse cx="300" cy="560" rx="25" ry="9"/><ellipse cx="360" cy="560" rx="25" ry="9"/>
+    <ellipse cx="420" cy="560" rx="25" ry="9"/><ellipse cx="480" cy="560" rx="25" ry="9"/><ellipse cx="540" cy="560" rx="25" ry="9"/>
+    <ellipse cx="240" cy="600" rx="25" ry="9"/><ellipse cx="300" cy="600" rx="25" ry="9"/><ellipse cx="360" cy="600" rx="25" ry="9"/>
+    <ellipse cx="420" cy="600" rx="25" ry="9"/><ellipse cx="480" cy="600" rx="25" ry="9"/>
+    <ellipse cx="240" cy="640" rx="25" ry="9"/><ellipse cx="300" cy="640" rx="25" ry="9"/><ellipse cx="360" cy="640" rx="25" ry="9"/>
+    <ellipse cx="420" cy="640" rx="25" ry="9"/>
+    <ellipse cx="240" cy="680" rx="25" ry="9"/><ellipse cx="300" cy="680" rx="25" ry="9"/>
+  </g>
+  <g fill="#1e1e2e" opacity="0.65">
+    <circle cx="240" cy="555" r="7"/><circle cx="300" cy="555" r="7"/><circle cx="360" cy="555" r="7"/>
+    <circle cx="420" cy="555" r="7"/><circle cx="480" cy="555" r="7"/>
+    <circle cx="240" cy="595" r="7"/><circle cx="300" cy="595" r="7"/><circle cx="360" cy="595" r="7"/>
+    <circle cx="240" cy="635" r="7"/><circle cx="300" cy="635" r="7"/>
+    <circle cx="240" cy="675" r="7"/>
+  </g>
+
+  <!-- Zone 4 - bottom right -->
+  <g fill="#c8d8c0" opacity="0.6">
+    <ellipse cx="860" cy="560" rx="25" ry="9"/><ellipse cx="920" cy="560" rx="25" ry="9"/><ellipse cx="980" cy="560" rx="25" ry="9"/>
+    <ellipse cx="1040" cy="560" rx="25" ry="9"/><ellipse cx="1100" cy="560" rx="25" ry="9"/><ellipse cx="1160" cy="560" rx="25" ry="9"/>
+    <ellipse cx="860" cy="600" rx="25" ry="9"/><ellipse cx="920" cy="600" rx="25" ry="9"/><ellipse cx="980" cy="600" rx="25" ry="9"/>
+    <ellipse cx="1040" cy="600" rx="25" ry="9"/><ellipse cx="1100" cy="600" rx="25" ry="9"/>
+    <ellipse cx="880" cy="640" rx="25" ry="9"/><ellipse cx="940" cy="640" rx="25" ry="9"/><ellipse cx="1000" cy="640" rx="25" ry="9"/>
+    <ellipse cx="1060" cy="640" rx="25" ry="9"/>
+    <ellipse cx="900" cy="680" rx="25" ry="9"/><ellipse cx="960" cy="680" rx="25" ry="9"/>
+  </g>
+  <g fill="#1e1e2e" opacity="0.65">
+    <circle cx="860" cy="555" r="7"/><circle cx="920" cy="555" r="7"/><circle cx="980" cy="555" r="7"/>
+    <circle cx="1040" cy="555" r="7"/><circle cx="1100" cy="555" r="7"/>
+    <circle cx="860" cy="595" r="7"/><circle cx="920" cy="595" r="7"/><circle cx="980" cy="595" r="7"/>
+    <circle cx="880" cy="635" r="7"/><circle cx="940" cy="635" r="7"/>
+    <circle cx="900" cy="675" r="7"/>
+  </g>
+
+  <!-- Central stage / instructor circle -->
+  <circle cx="700" cy="500" r="50" fill="#f0e8d0" opacity="0.4"/>
+  <circle cx="700" cy="500" r="40" fill="#e8dac0" opacity="0.5"/>
+  <!-- Instructor top-down -->
+  <g transform="translate(700,500)">
+    <ellipse cy="6" rx="20" ry="7" fill="#8a6a2a" opacity="0.8"/>
+    <circle r="11" fill="#8a6a2a" opacity="0.9"/>
+    <circle r="11" fill="none" stroke="#f0d070" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <!-- Flags/banners at corners -->
+  <g fill="#ff8c00" opacity="0.7">
+    <polygon points="200,260 200,240 225,250"/>
+    <polygon points="1200,260 1200,240 1175,250"/>
+    <polygon points="200,740 200,760 225,750"/>
+    <polygon points="1200,740 1200,760 1175,750"/>
+  </g>
+
+  <!-- Sky elements (aerial view shows horizon at top) -->
+  <text x="700" y="140" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#fff" opacity="0.5" letter-spacing="6">INTERNATIONAL YOGA DAY</text>
+  <text x="700" y="170" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#fff" opacity="0.35" letter-spacing="4">TASHU YOGA · LUCKNOW</text>
+
+  <!-- Clouds -->
+  <g fill="#fff" opacity="0.3">
+    <ellipse cx="200" cy="80" rx="70" ry="25"/>
+    <ellipse cx="250" cy="75" rx="55" ry="22"/>
+    <ellipse cx="900" cy="60" rx="80" ry="28"/>
+    <ellipse cx="960" cy="55" rx="60" ry="24"/>
+    <ellipse cx="500" cy="100" rx="50" ry="18"/>
+  </g>
+</svg>
